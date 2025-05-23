@@ -1,5 +1,6 @@
 # SistemaUniversidade
-create database	sistema_universidade;
+
+create database sistema_universidade;
 use sistema_universidade;
 
 CREATE TABLE aluno (
@@ -54,7 +55,7 @@ constraint fk_aluno_endereco
      foreign key (id_aluno)
      references aluno (id_aluno),
      
-     constraint fk_professor_endereco
+ constraint fk_professor_endereco
      foreign key (id_professor)
      references professor (id_professor)
 );
@@ -81,7 +82,7 @@ constraint fk_professor_materias
      foreign key (id_professor)
      references professor (id_professor),
      
-     constraint fk_cursos_mateias
+  constraint fk_cursos_mateias
      foreign key (id_cursos)
      references cursos (id_cursos)
 );
