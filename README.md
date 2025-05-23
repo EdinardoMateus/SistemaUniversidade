@@ -1,4 +1,5 @@
 # SistemaUniversidade
+<<<<<<< HEAD
 
 create database sistema_universidade;
 
@@ -53,35 +54,6 @@ id_professor int,
 constraint fk_aluno_endereco
      foreign key (id_aluno)
      references aluno (id_aluno),
+=======
+>>>>>>> d8b0352d3729280b6d88529015b4301e87eea958
      
- constraint fk_professor_endereco
-     foreign key (id_professor)
-     references professor (id_professor)
-);
-
-CREATE TABLE cursos (
-id_cursos int not null primary key auto_increment,
-presencial_ead VARCHAR(10),
-nome VARCHAR(40),
-carga_horario VARCHAR(10)
-);
-alter table cursos add id_aluno int;
-
-alter table cursos add constraint fk_aluno_cursos foreign KEY (id_aluno) REFERENCES aluno (id_aluno);
-
-CREATE TABLE materias (
-id_materias int not null primary key auto_increment,
-presencia_ead VARCHAR(10),
-nome VARCHAR(40),
-carga_horario varchar(12),
-id_professor int,
-id_cursos int ,
-
-constraint fk_professor_materias
-     foreign key (id_professor)
-     references professor (id_professor),
-     
-  constraint fk_cursos_mateias
-     foreign key (id_cursos)
-     references cursos (id_cursos)
-);
