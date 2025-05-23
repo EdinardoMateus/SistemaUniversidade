@@ -1,12 +1,12 @@
 # SistemaUniversidade
 
-create database sistema_universidade;
-use sistema_universidade;
+# create database sistema_universidade;
+# use sistema_universidade;
 
-CREATE TABLE aluno (
-id_aluno int not null primary key auto_increment,
-cpf VARCHAR(20),
-rg VARCHAR(15),
+# CREATE TABLE aluno (
+# id_aluno int not null primary key auto_increment,
+# vcpf VARCHAR(20),
+#rg VARCHAR(15),
 Nome VARCHAR(30),
 email VARCHAR(30),
 genero VARCHAR(15),
